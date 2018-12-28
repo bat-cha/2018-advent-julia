@@ -1,7 +1,7 @@
 using DelimitedFiles
 
 function solve(input)
-    raw = readdlm(input,'\n', Int64)
+    raw = readdlm(input,'\n', Int16)
     serial_number=raw[1]
     @show search(serial_number,300,3:3)
     @show search(serial_number,300,1:300)
